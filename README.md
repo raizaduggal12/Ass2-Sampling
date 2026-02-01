@@ -7,11 +7,21 @@ Since the dataset is **highly imbalanced**, appropriate sampling and evaluation 
 ---
 
 ## 📂 Dataset
-- **Dataset**: Credit Card Transactions  
-- **Target Variable**: `Class`  
-  - `0` → Non-Fraud  
-  - `1` → Fraud  
-- **Challenge**: Severe class imbalance  
+
+The dataset used in this project was obtained from the following GitHub repository:
+
+🔗 **Dataset Source:**  
+https://github.com/AnjulaMehto/Sampling_Assignment/blob/main/Creditcard_data.csv
+
+### Dataset Description
+- **Dataset Name:** Credit Card Transactions  
+- **Target Variable:** `Class`  
+  - `0` → Non-Fraudulent Transaction  
+  - `1` → Fraudulent Transaction  
+- **Key Challenge:** Severe class imbalance, where fraudulent transactions are significantly fewer than non-fraudulent ones.
+
+This imbalance makes the dataset well-suited for studying the impact of different sampling techniques and evaluation strategies on binary classification performance.
+
 
 ---
 
