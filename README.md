@@ -47,20 +47,6 @@ The following classification models were trained and evaluated:
 
 ---
 
-## 📊 Performance Results (Accuracy %)
-
-| Model | Random | Cross-Validation | Stratified | Cluster | Bootstrap |
-|------|--------|------------------|------------|---------|-----------|
-| Logistic Regression | 98.28 | 97.xx | 98.28 | 97.87 | 97.84 |
-| Decision Tree | 93.97 | 95.xx | 96.55 | 97.87 | 98.71 |
-| Random Forest | 98.28 | 99.xx | 98.28 | 97.87 | 100.00 |
-| Support Vector Machine | 94.83 | 97.xx | 98.28 | 97.87 | 96.98 |
-| Naive Bayes | 93.97 | 94.xx | 97.41 | 97.87 | 93.10 |
-
-> *Exact values may vary slightly due to randomness in sampling and model initialization.*
-
----
-
 ## 📉 Visualizations
 
 ### 📈 Model Accuracy Comparison (Line Plot)
@@ -68,7 +54,7 @@ The following classification models were trained and evaluated:
 
 ---
 
-### 🔥 Accuracy Summary Table (Heatmap-style)
+### Performance Results (Accuracy %)
 ![Accuracy Table](images/table.png)
 
 ---
