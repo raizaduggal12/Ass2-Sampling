@@ -1,4 +1,4 @@
-# Sampling Techniques & Model Performance Analysis
+# 📊 Sampling Techniques & Model Performance Analysis
 
 ## Overview
 This project analyzes the impact of different **sampling techniques** on **binary classification performance** using a **Credit Card Fraud Detection** dataset.  
@@ -22,6 +22,13 @@ https://github.com/AnjulaMehto/Sampling_Assignment/blob/main/Creditcard_data.csv
 
 This imbalance makes the dataset well-suited for studying the impact of different sampling techniques and evaluation strategies on binary classification performance.
 
+---
+
+## 🔬 Methodology Workflow
+
+The following diagram illustrates the **complete workflow implemented in `code.ipynb`**, from data loading to final evaluation and visualization.
+
+![Methodology Flowchart](images/flowchart.png)
 
 ---
 
@@ -64,7 +71,7 @@ The following classification models were trained and evaluated:
 
 ---
 
-### Performance Results (Accuracy %)
+### 📊 Performance Results (Accuracy %)
 ![Accuracy Table](images/table.png)
 
 ---
@@ -93,64 +100,41 @@ Ass2/
 ├── Creditcard_data.csv
 ├── README.md
 └── images/
-├── accuracy_line_plot.png
-└── table.png
+    ├── flowchart.png
+    ├── accuracy_line_plot.png
+    └── table.png
 ```
 
-## Model-wise Best Sampling Technique Analysis
+
+---
+
+## 📊 Model-wise Best Sampling Technique Analysis
 
 Based on the experimental results obtained from different sampling and evaluation techniques, the following observations identify **which sampling technique yields the highest accuracy for each model**.
 
----
-
 ### 🔹 Logistic Regression
 - **Best Technique:** Cross-Validation  
-- **Highest Accuracy:** **98.70%**  
-- **Observation:** Logistic Regression benefits from repeated stratified evaluation, leading to more stable and reliable performance estimates.
-
----
+- **Highest Accuracy:** **98.70%**
 
 ### 🔹 Decision Tree
 - **Best Technique:** Bootstrap Sampling  
-- **Highest Accuracy:** **98.71%**  
-- **Observation:** Bootstrap sampling improves decision tree performance by exposing the model to multiple resampled datasets, enhancing generalization.
-
----
+- **Highest Accuracy:** **98.71%**
 
 ### 🔹 Random Forest
 - **Best Technique:** Bootstrap Sampling  
-- **Highest Accuracy:** **100.00%**  
-- **Observation:** Since Random Forest inherently relies on bootstrapped samples, this technique naturally delivers the strongest performance.
-
----
+- **Highest Accuracy:** **100.00%**
 
 ### 🔹 Support Vector Machine (SVM)
 - **Best Technique:** Stratified Sampling  
-- **Highest Accuracy:** **98.28%**  
-- **Observation:** Maintaining class proportions helps SVM learn more balanced decision boundaries in imbalanced datasets.
-
----
+- **Highest Accuracy:** **98.28%**
 
 ### 🔹 Naive Bayes
 - **Best Technique:** Cluster Sampling  
-- **Highest Accuracy:** **97.87%**  
-- **Observation:** Naive Bayes benefits from localized data distributions preserved through cluster sampling.
+- **Highest Accuracy:** **97.87%**
 
 ---
 
-## Summary Table
-
-| Model | Best Sampling Technique | Accuracy (%) |
-|------|-------------------------|--------------|
-| Logistic Regression | Cross-Validation | 98.70 |
-| Decision Tree | Bootstrap Sampling | 98.71 |
-| Random Forest | Bootstrap Sampling | 100.00 |
-| Support Vector Machine | Stratified Sampling | 98.28 |
-| Naive Bayes | Cluster Sampling | 97.87 |
-
----
-
-## Final Insight
+## 🎯 Final Insight
 The results clearly demonstrate that **no single sampling technique is optimal for all models**.  
 Tree-based models perform best with **Bootstrap Sampling**, linear models benefit from **Cross-Validation**, and imbalance-sensitive models gain from **Stratified Sampling**.  
 Therefore, selecting an appropriate sampling and evaluation strategy is essential for achieving reliable and robust performance on imbalanced classification problems.
