@@ -1,4 +1,4 @@
-# 📊 Sampling Techniques & Model Performance Analysis
+#  Sampling Techniques & Model Performance Analysis
 
 ## Overview
 This project analyzes the impact of different **sampling techniques** on **binary classification performance** using a **Credit Card Fraud Detection** dataset.  
@@ -24,7 +24,7 @@ This imbalance makes the dataset well-suited for studying the impact of differen
 
 ---
 
-## 🔬 Methodology Workflow
+##  Methodology Workflow
 
 The following diagram illustrates the **complete workflow implemented in `code.ipynb`**, from data loading to final evaluation and visualization.
 
@@ -71,7 +71,7 @@ The following classification models were trained and evaluated:
 
 ---
 
-### 📊 Performance Results (Accuracy %)
+###  Performance Results (Accuracy %)
 ![Accuracy Table](images/table.png)
 
 ---
@@ -108,7 +108,7 @@ Ass2/
 
 ---
 
-## 📊 Model-wise Best Sampling Technique Analysis
+##  Model-wise Best Sampling Technique Analysis
 
 Based on the experimental results obtained from different sampling and evaluation techniques, the following observations identify **which sampling technique yields the highest accuracy for each model**.
 
@@ -134,7 +134,7 @@ Based on the experimental results obtained from different sampling and evaluatio
 
 ---
 
-## 🎯 Final Insight
+## Final Insight
 The results clearly demonstrate that **no single sampling technique is optimal for all models**.  
 Tree-based models perform best with **Bootstrap Sampling**, linear models benefit from **Cross-Validation**, and imbalance-sensitive models gain from **Stratified Sampling**.  
 Therefore, selecting an appropriate sampling and evaluation strategy is essential for achieving reliable and robust performance on imbalanced classification problems.
