@@ -62,9 +62,14 @@ The following classification models were trained and evaluated:
 ---
 
 ## 📉 Visualizations
-- Class distribution plots for each sampling technique  
-- Line plot comparing model accuracy across sampling and evaluation techniques  
-- Heatmap visualization for overall performance comparison  
+
+### 📈 Model Accuracy Comparison (Line Plot)
+![Accuracy Line Plot](images/accuracy_line_plot.png)
+
+---
+
+### 🔥 Accuracy Summary Table (Heatmap-style)
+![Accuracy Table](images/table.png)
 
 ---
 
@@ -93,7 +98,11 @@ Replacing systematic sampling with **cross-validation** improves robustness and 
 
 ## 📁 Repository Structure
 ```
+Ass2/
 ├── code.ipynb
 ├── Creditcard_data.csv
 ├── README.md
+└── images/
+├── accuracy_line_plot.png
+└── table.png
 ```
