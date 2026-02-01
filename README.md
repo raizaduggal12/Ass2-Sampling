@@ -68,12 +68,6 @@ The following classification models were trained and evaluated:
 
 ---
 
-## 🎯 Conclusion
-This study demonstrates that **sampling strategy selection significantly impacts model performance**, particularly for imbalanced classification problems.  
-Replacing systematic sampling with **cross-validation** improves robustness and ensures a fair and reliable evaluation of machine learning models.
-
----
-
 ## 🛠️ Technologies Used
 - Python  
 - Pandas, NumPy  
@@ -92,3 +86,61 @@ Ass2/
 ├── accuracy_line_plot.png
 └── table.png
 ```
+
+## 📊 Model-wise Best Sampling Technique Analysis
+
+Based on the experimental results obtained from different sampling and evaluation techniques, the following observations identify **which sampling technique yields the highest accuracy for each model**.
+
+---
+
+### 🔹 Logistic Regression
+- **Best Technique:** Cross-Validation  
+- **Highest Accuracy:** **98.70%**  
+- **Observation:** Logistic Regression benefits from repeated stratified evaluation, leading to more stable and reliable performance estimates.
+
+---
+
+### 🔹 Decision Tree
+- **Best Technique:** Bootstrap Sampling  
+- **Highest Accuracy:** **98.71%**  
+- **Observation:** Bootstrap sampling improves decision tree performance by exposing the model to multiple resampled datasets, enhancing generalization.
+
+---
+
+### 🔹 Random Forest
+- **Best Technique:** Bootstrap Sampling  
+- **Highest Accuracy:** **100.00%**  
+- **Observation:** Since Random Forest inherently relies on bootstrapped samples, this technique naturally delivers the strongest performance.
+
+---
+
+### 🔹 Support Vector Machine (SVM)
+- **Best Technique:** Stratified Sampling  
+- **Highest Accuracy:** **98.28%**  
+- **Observation:** Maintaining class proportions helps SVM learn more balanced decision boundaries in imbalanced datasets.
+
+---
+
+### 🔹 Naive Bayes
+- **Best Technique:** Cluster Sampling  
+- **Highest Accuracy:** **97.87%**  
+- **Observation:** Naive Bayes benefits from localized data distributions preserved through cluster sampling.
+
+---
+
+## ✅ Summary Table
+
+| Model | Best Sampling Technique | Accuracy (%) |
+|------|-------------------------|--------------|
+| Logistic Regression | Cross-Validation | 98.70 |
+| Decision Tree | Bootstrap Sampling | 98.71 |
+| Random Forest | Bootstrap Sampling | 100.00 |
+| Support Vector Machine | Stratified Sampling | 98.28 |
+| Naive Bayes | Cluster Sampling | 97.87 |
+
+---
+
+## 🎯 Final Insight
+The results clearly demonstrate that **no single sampling technique is optimal for all models**.  
+Tree-based models perform best with **Bootstrap Sampling**, linear models benefit from **Cross-Validation**, and imbalance-sensitive models gain from **Stratified Sampling**.  
+Therefore, selecting an appropriate sampling and evaluation strategy is essential for achieving reliable and robust performance on imbalanced classification problems.
